@@ -11,7 +11,8 @@ strategy:
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '$(python.version)'
+    versionSpec: '3.6'
+    disableDownloadFromRegistry: false
   displayName: 'Use Python $(python.version)'
 
 - script: |
